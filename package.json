@@ -1,0 +1,12 @@
+{
+  "name": "portofolio-tika",
+  "version": "1.0.0",
+  "description": "Portofolio Tika, sebagai tugas dari mata kuliah Pemrograman Web",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

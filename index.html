@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Halo! Ini portofolio milik saya Tika, seorang mahasiswa Teknologi Rekayasa Perangkat Lunak di Undiksha">
+    <meta name="keywords" content="Web Developer, Tika, Portofolio, HTML, CSS, React, Laravel">
+    <meta name="author" content="Tika">
+
+    <meta property="og:title" content="Portfolio Tikaa - Web Developer & Pengajar Coding">
+    <meta property="og:description" content="Lihat karya dan proyek saya sebagai Web Developer.">
+    <meta property="og:image" content="./asset/Logo.png">
+    <meta property="og:type" content="website">
+
+    <title>Portfolio Tikaa</title>
+
+    <link rel="icon" type="image/x-icon" href="./asset/Logo.png">
+    <link rel="stylesheet" href="dist/output.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-cream-50 text-ink font-sans leading-relaxed antialiased">
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-cream-50/90 backdrop-blur border-b border-cream-200/70">
+        <div class="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between gap-4">
+            <a href="#top"><img src="./asset/Logo utama.png" alt=""></a>
+            <nav>
+                <ul id="menu" class="hidden md:flex gap-8 list-none">
+                    <li><a href="#top" class="text-sm font-medium text-ink-soft hover:text-brown border-b-2 border-transparent hover:border-cream-300 pb-1">Beranda</a></li>
+                    <li><a href="#tentang" class="text-sm font-medium text-ink-soft hover:text-brown border-b-2 border-transparent hover:border-cream-300 pb-1">Tentang saya</a></li>
+                    <li><a href="#project" class="text-sm font-medium text-ink-soft hover:text-brown border-b-2 border-transparent hover:border-cream-300 pb-1">Project</a></li>
+                    <li><a href="#kontak" class="text-sm font-medium text-ink-soft hover:text-brown border-b-2 border-transparent hover:border-cream-300 pb-1">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a href="#kontak" class="hidden sm:inline-flex items-center gap-2 text-sm font-semibold bg-cream-200 hover:bg-cream-300 text-brown-dark rounded-full px-5 py-2.5 transition-colors">Hubungi saya</a>
+                <button id="navToggle" aria-expanded="false" aria-controls="menu" aria-label="Buka menu"
+                    class="md:hidden border border-cream-300 rounded-lg p-2 text-ink">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menuMobile" class="hidden md:hidden flex-col gap-1 px-6 pb-4 bg-cream-50 border-b border-cream-200">
+            <li><a href="#top" class="block py-2 text-sm font-medium text-ink-soft">Beranda</a></li>
+            <li><a href="#tentang" class="block py-2 text-sm font-medium text-ink-soft">Tentang saya</a></li>
+            <li><a href="#layanan" class="block py-2 text-sm font-medium text-ink-soft">Layanan</a></li>
+            <li><a href="#project" class="block py-2 text-sm font-medium text-ink-soft">Project</a></li>
+            <li><a href="#kontak" class="block py-2 text-sm font-semibold text-brown">Hubungi saya</a></li>
+        </ul>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden pt-16 md:pt-20" style="background: radial-gradient(120% 90% at 50% 100%, #ECD6B6 0%, transparent 62%);">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <div class="inline-flex items-center gap-2 text-sm font-semibold text-brown bg-white border border-cream-200 rounded-full px-4 py-1.5 mb-5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#4A8B7A]"></span> Protofolio
+                </div>
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-[1.15] mb-5">
+                    Ni Putu <span class="bg-skyp-100 text-brown-dark px-1 rounded-md">Swastika</span> Dewi Suryani
+                </h1>
+                <p class="text-ink-soft text-[17px] max-w-[60ch] mb-7">
+                    Seorang mahasiswa Teknologi Rekayasa Perangkat Lunak di Universitas Pendidikan Ganesha yang saat ini, berfokus mengembangkan keahlian dalam pengembangan web dan desain web app untuk menciptakan pengalaman digital yang fungsional sekaligus aesthetic.
+                </p>
+                <div class="flex flex-wrap gap-3 mb-8">
+                    <a href="#project" class="inline-flex items-center gap-2 text-sm font-semibold bg-brown hover:bg-brown-dark text-cream-50 rounded-full px-6 py-3.5 transition-colors">
+                    Lihat project saya
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                    </a>
+                </div>
+                
+            </div>
+
+            <div class="relative aspect-square md:aspect-[1/1.08] max-w-[420px] md:max-w-none mx-auto flex items-end justify-center">
+                <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <div class="absolute w-[62%] h-[62%] rounded-full border border-cream-300/70"></div>
+                    <div class="absolute w-[82%] h-[82%] rounded-full border border-cream-300/70"></div>
+                    <div class="absolute w-full h-full rounded-full border border-cream-300/70"></div>
+                </div>
+                <div class="absolute left-0 md:-left-4 top-[28%] z-10 bg-white border border-cream-200 rounded-2xl px-4 py-2.5 shadow-[0_8px_20px_rgba(100,62,33,0.10)] text-[13.5px]">
+                    <b class="block text-[14.5px] font-bold">Web developer</b><span class="text-ink-soft text-[12.5px]">HTML, CSS, Laravel, React</span>
+                </div>
+                <div class="relative w-[78%] h-[85%] mb-5 rounded-t-[200px] rounded-b-3xl bg-cream-100 border-2 border-dashed border-cream-300 flex items-end px-5 text-brown-light">
+                    <img src="./asset/Foto Tika.png" alt="" class="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Tools -->
+    <section class="bg-brown text-cream-100 py-9">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="text-[26px] font-semibold mb-6 text-center">Skills & Tools</h3>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-3.5">
+                <div class="bg-white/[0.09] border border-white/20 rounded-xl px-4 py-3.5 justify-items-center text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" viewBox="0 0 16 16" class="mb-2">
+                        <path d="M0 0h16v16H0z" fill="none" />
+                        <path fill="#F7EDDD" d="M.946 0L2.23 14.4L7.992 16l5.777-1.602L15.055 0zM12.26 4.71H5.502l.161 1.809H12.1l-.485 5.422l-3.623 1.004l-3.618-1.004l-.247-2.774H5.9l.126 1.41l1.967.53l.004-.001l1.968-.531l.204-2.29H4.048l-.476-5.341h8.847l-.158 1.766z" />
+                    </svg>
+                    <b class="text-[15px] font-semibold">HTML &amp; CSS</b>
+                </div>
+                <div class="bg-white/[0.09] border border-white/20 rounded-xl px-4 py-3.5 justify-items-center text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" viewBox="0 0 24 24" class="mb-2">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <g fill="none" stroke="#F7EDDD" stroke-linejoin="round" stroke-width="1.5">
+                            <circle cx="15" cy="12" r="3" />
+                            <path d="M9 21a3 3 0 0 0 3-3v-3H9a3 3 0 1 0 0 6Z" />
+                            <path stroke-linecap="round" d="M12 9v6H9a3 3 0 1 1 0-6zm0-6v6H9a3 3 0 0 1 0-6zm0 0v6h3a3 3 0 1 0 0-6z" />
+                        </g>
+                    </svg>
+                    <b class="block text-[15px] font-semibold">Figma</b>
+                </div>
+                <div class="bg-white/[0.09] border border-white/20 rounded-xl px-4 py-3.5 justify-items-center text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" viewBox="0 0 512 512" class="mb-2">
+                        <path d="M0 0h512v512H0z" fill="none" />
+                        <path fill="currentColor" d="M107.2 0c2.5 0 4.7.8 6.7 2l94.3 54.1c2.7 1.5 4.5 3.5 5.4 5.9c.9 2.2.9 4.3.9 5.6V261l69.2-39.7V121c0-2.6.6-5 2.2-7.2c1.5-2.1 3.5-3.6 5.7-4.8l94-54c1.6-.9 3.4-1.6 5.5-1.6s4 .7 5.6 1.6l95.8 55.1c2.3 1.3 3.9 3 4.9 5.3c.9 2.1.9 4.2.9 5.8v107.2c0 2-.2 4.3-1.4 6.4c-1.2 2.2-3 3.7-5.1 4.9l-.1.1l-88 50.5v100c0 2.3-.3 4.8-1.6 7s-3.3 3.7-5.3 4.9h-.1L208.7 510c-2.2 1.2-4.5 2-7.1 2s-4.9-.9-7.1-2l-.1-.1L7.1 402l-.5-.3c-1.1-.7-2.6-1.7-3.8-2.9c-1.9-1.9-2.8-4.2-2.8-7.2V65.9c0-4.8 3-7.9 5.5-9.3l95-54.6c2-1.2 4.3-2 6.8-2zM38.1 67.1l69 39.9l69.2-39.9l-69.2-39.7zm353 93.2l69-39.7l-69-39.7l-69.1 39.7zM189.2 89L120 128.8v186.4l69.2-39.9V88.9zm-94.7 39.9L25.2 89.1v294.2l164 94.2v-79.4l-87.3-49.3l-.2-.1c-1.3-.8-3.2-1.9-4.6-3.7c-1.7-2.1-2.5-4.7-2.5-7.7V128.8zm214.7 92.4l69.3 39.6v-78.5l-69.3-39.9zm94.5 39.6l69.3-39.7v-78.8l-69.3 39.9v78.5zM201.6 376.1l163.8-93.2l-69-39.9L133 337.1l68.6 38.9zm12.9 101.5l164-94.2v-78.8l-164 93.6z" />
+                    </svg>
+                    <b class="block text-[15px] font-semibold">Laravel</b>
+                </div>
+                <div class="bg-white/[0.09] border border-white/20 rounded-xl px-4 py-3.5 justify-items-center text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" viewBox="0 0 512 512" class="mb-2">
+                        <path d="M0 0h512v512H0z" fill="none" />
+                        <path fill="currentColor" d="M418.2 177.2q-8.1-2.7-16.2-5.1c.9-3.7 1.7-7.4 2.5-11.1c12.3-59.6 4.2-107.5-23.1-123.3c-26.3-15.1-69.2.6-112.6 38.4c-4.3 3.7-8.5 7.6-12.5 11.5c-2.7-2.6-5.5-5.2-8.3-7.7c-45.5-40.4-91.1-57.4-118.4-41.5c-26.2 15.2-34 60.3-23 116.7c1.1 5.6 2.3 11.1 3.7 16.7c-6.4 1.8-12.7 3.8-18.6 5.9C38.3 196.2 0 225.4 0 255.6c0 31.2 40.8 62.5 96.3 81.5c4.5 1.5 9 3 13.6 4.3c-1.5 6-2.8 11.9-4 18c-10.5 55.5-2.3 99.5 23.9 114.6c27 15.6 72.4-.4 116.6-39.1c3.5-3.1 7-6.3 10.5-9.7c4.4 4.3 9 8.4 13.6 12.4c42.8 36.8 85.1 51.7 111.2 36.6c27-15.6 35.8-62.9 24.4-120.5q-1.35-6.6-3-13.5c3.2-.9 6.3-1.9 9.4-2.9c57.7-19.1 99.5-50 99.5-81.7c0-30.3-39.4-59.7-93.8-78.4M282.9 92.3c37.2-32.4 71.9-45.1 87.7-36c16.9 9.7 23.4 48.9 12.8 100.4c-.7 3.4-1.4 6.7-2.3 10c-22.2-5-44.7-8.6-67.3-10.6c-13-18.6-27.2-36.4-42.6-53.1c3.9-3.7 7.7-7.2 11.7-10.7M167.2 307.5c5.1 8.7 10.3 17.4 15.8 25.9c-15.6-1.7-31.1-4.2-46.4-7.5c4.4-14.4 9.9-29.3 16.3-44.5c4.6 8.8 9.3 17.5 14.3 26.1m-30.3-120.3c14.4-3.2 29.7-5.8 45.6-7.8c-5.3 8.3-10.5 16.8-15.4 25.4c-4.9 8.5-9.7 17.2-14.2 26c-6.3-14.9-11.6-29.5-16-43.6m27.4 68.9c6.6-13.8 13.8-27.3 21.4-40.6s15.8-26.2 24.4-38.9c15-1.1 30.3-1.7 45.9-1.7s31 .6 45.9 1.7q12.75 18.9 24.3 38.7c11.55 19.8 14.9 26.7 21.7 40.4q-10.05 20.7-21.6 40.8c-7.6 13.3-15.7 26.2-24.2 39c-14.9 1.1-30.4 1.6-46.1 1.6s-30.9-.5-45.6-1.4q-13.05-19.05-24.6-39c-11.55-19.95-14.8-26.8-21.5-40.6m180.6 51.2c5.1-8.8 9.9-17.7 14.6-26.7c6.4 14.5 12 29.2 16.9 44.3c-15.5 3.5-31.2 6.2-47 8c5.4-8.4 10.5-17 15.5-25.6m14.4-76.5c-4.7-8.8-9.5-17.6-14.5-26.2q-7.35-12.75-15.3-25.2c16.1 2 31.5 4.7 45.9 8c-4.6 14.8-10 29.2-16.1 43.4M256.2 118.3c10.5 11.4 20.4 23.4 29.6 35.8c-19.8-.9-39.7-.9-59.5 0c9.8-12.9 19.9-24.9 29.9-35.8M140.2 57c16.8-9.8 54.1 4.2 93.4 39c2.5 2.2 5 4.6 7.6 7c-15.5 16.7-29.8 34.5-42.9 53.1c-22.6 2-45 5.5-67.2 10.4c-1.3-5.1-2.4-10.3-3.5-15.5c-9.4-48.4-3.2-84.9 12.6-94m-24.5 263.6c-4.2-1.2-8.3-2.5-12.4-3.9c-21.3-6.7-45.5-17.3-63-31.2c-10.1-7-16.9-17.8-18.8-29.9c0-18.3 31.6-41.7 77.2-57.6c5.7-2 11.5-3.8 17.3-5.5c6.8 21.7 15 43 24.5 63.6c-9.6 20.9-17.9 42.5-24.8 64.5m116.6 98c-16.5 15.1-35.6 27.1-56.4 35.3c-11.1 5.3-23.9 5.8-35.3 1.3c-15.9-9.2-22.5-44.5-13.5-92c1.1-5.6 2.3-11.2 3.7-16.7c22.4 4.8 45 8.1 67.9 9.8c13.2 18.7 27.7 36.6 43.2 53.4c-3.2 3.1-6.4 6.1-9.6 8.9m24.5-24.3c-10.2-11-20.4-23.2-30.3-36.3c9.6.4 19.5.6 29.5.6c10.3 0 20.4-.2 30.4-.7c-9.2 12.7-19.1 24.8-29.6 36.4m130.7 30c-.9 12.2-6.9 23.6-16.5 31.3c-15.9 9.2-49.8-2.8-86.4-34.2c-4.2-3.6-8.4-7.5-12.7-11.5c15.3-16.9 29.4-34.8 42.2-53.6c22.9-1.9 45.7-5.4 68.2-10.5c1 4.1 1.9 8.2 2.7 12.2c4.9 21.6 5.7 44.1 2.5 66.3m18.2-107.5c-2.8.9-5.6 1.8-8.5 2.6c-7-21.8-15.6-43.1-25.5-63.8c9.6-20.4 17.7-41.4 24.5-62.9c5.2 1.5 10.2 3.1 15 4.7c46.6 16 79.3 39.8 79.3 58c0 19.6-34.9 44.9-84.8 61.4m-149.7-15c25.3 0 45.8-20.5 45.8-45.8s-20.5-45.8-45.8-45.8s-45.8 20.5-45.8 45.8s20.5 45.8 45.8 45.8" />
+                    </svg>
+                    <b class="block text-[15px] font-semibold">React</b>
+                </div>
+                <div class="bg-white/[0.09] border border-white/20 rounded-xl px-4 py-3.5 col-span-2 md:col-span-1 justify-items-center text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" viewBox="0 0 995.329 1000" class="mb-2">
+                        <path d="M0 0h995.329v1000H0z" fill="none" />
+                        <path fill="currentColor" d="M501.983 0C306.099-.341 121.728 115.812 37.114 299.669l237.919.566v26.02c-73.261-8.816-66.81 29.228-56.439 69.607l156.183 391.429l114.795-269.092l-52.699-126.108c-19.142-33.777-19.546-71.25-97.858-67.721l1.1-23.978l348.943.849v26.869c-40.865 2.397-90.057-10.274-63.981 73.409l141.13 370.72l77.149-216.424c25.263-90.724 1.487-177.91-28.534-263.405c-16.697-57.355-8.91-105.254 65.93-124.255C766.517 51.55 631.727.226 501.987 0zm474.58 342.25L750.334 931.939c62.476-54.11 126.535-73.806 204.922-223.526c52.155-124.532 46.786-239.897 21.307-366.164zm-963.395 9.553C-8.913 525.888-6.893 576.876 47.767 719.036c71.25 136.154 126.502 164.84 204.922 218.246zm497.646 220.886L343.162 977.191c117.681 33.589 222.978 29.385 319.372-7.982z" />
+                    </svg>
+                    <b class="block text-[15px] font-semibold">WordPress</b>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang -->
+    <section id="tentang" class="py-20">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
+            <div>
+                <p class="text-sm font-semibold text-cream-400 mb-2">Tentang saya</p>
+                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-6">Di balik baris kode & panggung seni </h2>
+                <div class="space-y-4 text-ink-soft text-[16px]">
+                    <p>Saya adalah mahasiswa program studi Teknologi Rekayasa Perangkat Lunak (TRPL) di Universitas Pendidikan Ganesha (Undiksha) yang memiliki ketertarikan besar pada dunia teknologi informasi, khususnya dalam pengembangan dan desain aplikasi web.</p>
+                    <p>Selain berkutat dengan baris kode dan logika pemrograman, saya juga aktif menggeluti dunia sastra, terutama seni teater. Bagi saya, dunia IT dan teater memiliki keindahan yang saling melengkapi: teater melatih saya dalam menyampaikan cerita, berempati, dan memahami ekspresi manusia, sementara teknologi memberi saya wadah untuk mewujudkan pemikiran tersebut menjadi solusi digital yang nyata.</p>
+                    <p>Namun teknologi bukan cuma alat. Ia jalan supaya para generasi muda punya kesempatan yang sama di era digital.</p>
+                </div>
+                <a href="#project" class="inline-flex items-center gap-2 mt-7 text-sm font-semibold text-brown border-[1.5px] border-cream-300 hover:bg-cream-100 rounded-full px-6 py-3.5 transition-colors">
+                    Lihat hasil kerjanya
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                </a>
+            </div>
+            <div class=" rounded-3xl bg-cream-100 border-2 border-dashed border-cream-300 flex flex-col items-center justify-center gap-1.5 text-center p-6 text-brown-light">
+                <img src="./asset//WhatsApp Image 2026-09-18 at 14.29.32.jpeg" alt="" class="rounded-3xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Project -->
+    <section id="project" class="bg-skyp-100 text-color-ink py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <p class="text-sm font-semibold text-color-ink-soft mb-2">Project</p>
+            <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-2.5">Satu project, dijelaskan sampai tuntas.</h2>
+            <p class="opacity-80 max-w-[62ch] text-[16.5px]">Berikut beberapa proyek aplikasi web yang telah dan sedang saya kembangkan.</p>
+
+            <article class="grid md:grid-cols-[1.1fr_0.9fr] gap-10 items-center bg-white/[0.06] border border-brown/25 rounded-3xl p-7 md:p-9 mt-9">
+            <div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="text-[12.5px] font-semibold bg-cream-200 border border-brown/25 px-3 py-1.5 rounded-full">HTML</span>
+                    <span class="text-[12.5px] font-semibold bg-cream-200 border border-brown/25 px-3 py-1.5 rounded-full">Tailwind CSS</span>
+                    <span class="text-[12.5px] font-semibold bg-cream-200 border border-brown/25 px-3 py-1.5 rounded-full">JavaScript</span>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold mb-4">Konverensi bilangan desimal ke biner, oktal dan hexadesimal</h3>
+                <div class="border-l-2 border-brown pl-3.5 mb-6">
+                    <b class="block text-[13px] font-semibold text-brown-dark-300 mb-0.5">Yang saya kerjakan</b>
+                    <p class="text-[15px] opacity-90">Website interaktif untuk membantu meng-konverensi angka desimal ke bentuk biner, oktal, dan hexadesimal</p>
+                </div>
+                <a href="volume.html" class="inline-flex items-center gap-2 text-sm font-semibold bg-cream-200 hover:bg-cream-300  text-brown-dark rounded-full px-6 py-3.5 transition-colors">
+                Lihat websitenya
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                </a>
+            </div>
+            <div class="aspect-[16/11] rounded-2xl bg-white/[0.12] border-2 border-dashed border-brown/25 flex flex-col items-center justify-center gap-1.5 text-center p-5">
+                <img src="./asset/project-web.png" alt="" class="rounded-2xl">
+            </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="bg-lav-100 rounded-[26px] px-6 md:px-11 py-11 text-center">
+                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-brown-dark max-w-[18ch] mx-auto mb-3">Punya ide yang ingin diwujudkan?</h2>
+                <p class="text-ink-soft text-[17px] max-w-[62ch] mx-auto mb-7">Ceritakan sedikit soal kebutuhanmu. Saya biasanya membalas dalam satu hari kerja.</p>
+                <div class="flex flex-wrap gap-2.5 max-w-xl mx-auto">
+                    <input id="pesan" type="text" placeholder="Misalnya: saya butuh website untuk usaha katering" aria-label="Pesan singkat"
+                    class="flex-1 min-w-[220px] text-[15px] text-ink bg-white border-[1.5px] border-transparent focus:border-brown-light focus:outline-none rounded-full px-5 py-3.5 placeholder:text-ink-soft">
+                    <button id="kirim" type="button" class="inline-flex items-center gap-2 text-sm font-semibold bg-brown hover:bg-brown-dark text-cream-50 rounded-full px-6 py-3.5 transition-colors">
+                    Kirim lewat WhatsApp
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                    </button>
+                </div>
+                <span id="err" role="status" class="block text-[13.5px] text-red-600 mt-3 min-h-[20px]"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-cream-50 border-t border-cream-200 pt-14 pb-7">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between pb-8 border-b border-cream-200">
+                <div>
+                    <a href="#top"><img src="./asset/Logo utama.png" alt=""></a>
+                    <p class="text-[14.5px] text-ink-soft max-w-[34ch] mt-3">Mahasiswa TRPL Undiksha yang sedang mengembangkan diri dibidang IT dan Seni Teater.</p>
+                    <div class="flex gap-2.5 mt-4">
+                        <a href="https://github.com/tika-woww" aria-label="GitHub" class="w-[38px] h-[38px] rounded-full border border-cream-200 flex items-center justify-center text-ink-soft hover:text-brown hover:bg-cream-100 hover:border-cream-300">
+                            <svg class="w-[17px] h-[17px]" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ni-putu-swastika-dewi-suryani-1b6719360/" aria-label="LinkedIn" class="w-[38px] h-[38px] rounded-full border border-cream-200 flex items-center justify-center text-ink-soft hover:text-brown hover:bg-cream-100 hover:border-cream-300">
+                            <svg class="w-[17px] h-[17px]" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm6 0h3.8v1.71h.05c.53-.95 1.83-1.96 3.76-1.96C20.7 8.75 22 10.9 22 14.2V21h-4v-6.1c0-1.5-.03-3.44-2.1-3.44-2.1 0-2.42 1.63-2.42 3.33V21H9V9Z"/></svg>
+                        </a>
+                        <a href="https://instagram.com/tika_swastikaa" aria-label="Instagram" class="w-[38px] h-[38px] rounded-full border border-cream-200 flex items-center justify-center text-ink-soft hover:text-brown hover:bg-cream-100 hover:border-cream-300">
+                            <svg class="w-[17px] h-[17px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold mb-3.5">Hubungi</h4>
+                    <ul class="grid gap-2.5">
+                        <li><a href="https://instagram.com/tika_swastikaa" class="text-[14.5px] text-ink-soft hover:text-brown">@tika_swastikaa</a></li>
+                        <li><a href="https://wa.me/6285738580180" class="text-[14.5px] text-ink-soft hover:text-brown">Chat WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-between gap-2.5 pt-5 text-[13.5px] text-ink-soft">
+                <span>© 2026 Tika's. Seluruh hak cipta dilindungi.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var nt=document.getElementById('navToggle'),mn=document.getElementById('menuMobile');
+        nt.addEventListener('click',function(){
+            var open=mn.classList.toggle('flex');
+            mn.classList.toggle('hidden');
+            nt.setAttribute('aria-expanded',open?'true':'false');
+        });
+        mn.addEventListener('click',function(e){
+            if(e.target.tagName==='A'){mn.classList.add('hidden');mn.classList.remove('flex');nt.setAttribute('aria-expanded','false')}
+        });
+    </script>
+</body>
+</html>
